@@ -2,10 +2,10 @@ from tabulate import tabulate
 import numpy as np
 
 lista_producto = [[1, "candado", 4000], [2, "tornillo", 1500], [
-    3, "martillo", 6000], [4, "huincha", 2500], [5, "alicate", 6000]]
+    3, "martillo", 6000], [4, "huincha", 2500], [5, "alicate", 6000], [6, "papel mural", 20000], [7, "socket", 2500], [8, "aceite", 5000], [9, "alambre", 8000], [10, "ampolleta", 3000]]
 
 comunas = [[1, "estacion Central", 2000], [2, "Providencia", 2500],
-           [3, "Las condes", 3000], [4, "Quinta Normal", 2000]]
+           [3, "Las condes", 3000], [4, "Quinta Normal", 2000], [5, "La pintana", 3000], [6, "Santiago", 1500], [7, "La reina", 4000], [8, "Recoleta", 2500], [4, "Cerrillos", 2000], [4, "Vitacura", 2000]]
 
 totalFinal = 0
 subtotal = 0
@@ -79,4 +79,5 @@ if(fin == 1):
     print(tabulate(factura, headers=["Detalle", "Monto"]))
 
 else:
-    print("El total de su compra sin despacho es: ", totalFinal)
+    print("El total de su compra sin despacho es: ")
+    print(tabulate(factura, headers=["Detalle", "Monto"]))
